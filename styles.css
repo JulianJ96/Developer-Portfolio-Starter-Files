@@ -33,10 +33,10 @@ h1 {
 }
 
 
-.btn{
+.header-btn{
     background-color: #F1EB90;
     padding: 1rem;
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 .btn h1{
@@ -82,38 +82,53 @@ h1 {
 .hero-logos ul li img {
     max-width: 100%; 
     padding-top: 5rem;
-    padding-right: 10rem;
+    padding-right: 12.5rem;
 }
 
 
 
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 4rem;
+}
+
+.hero-left, .hero-right{
+    flex: 1;
+    max-width: 45%;
+}
+
+.hero-left img,
+.hero-right img{
+    width: 93%;
+    padding-top: 3rem;
+}
 
 
+.hero-text-left h1,
+.hero-text-right h1 {
+    color: lightgray;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    margin-bottom: .5rem;
+    display: inline-flex;
+}
+
+.hero-text-left i,
+.hero-text-right i {
+    color: lightgray;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    display: inline-flex;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.hero-left p, .hero-right p {
+    color: gray;
+    margin-top: 1rem;
+    width: 100%; 
+}
 
 
 
@@ -141,8 +156,22 @@ h1 {
 
 
 @media screen and (max-width: 1440px) {
+
+    .header-btn{
+        margin-right: 2rem;
+    }
     .hero-logos ul li img {
-        padding-right: 7.25rem; /* Adjust the padding for 1440px screens */
+        padding-right: 7rem; /* Adjust the padding for 1440px screens */
+    }
+
+    .hero-left, .hero-right{
+        flex: 1;
+        max-width: 45%;
+    }
+
+    .hero-left img,
+    .hero-right img{
+        width: 90%;
     }
 }
 
