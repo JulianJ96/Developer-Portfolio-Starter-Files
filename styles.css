@@ -32,7 +32,16 @@ h1 {
     text-decoration: none;
     margin-right: 1rem;
 }
-
+.hamburger{
+    color: lightgray;
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+.header-mobile-btn{
+    display: none;
+}
 .header-btn {
     background-color: #fbe850;
     padding: 1rem;
@@ -245,7 +254,7 @@ h1 {
 
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
 
     .header-btn{
         margin-right: 2rem;
@@ -350,7 +359,13 @@ h1 {
 
 
 
-
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    /*==========HEADER SECTION================== */
+    .desktop-menu,
+    .header-btn {
+        display: none;
+    }
+}
 
 
 
